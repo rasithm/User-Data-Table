@@ -1,47 +1,20 @@
-let showMenuBar = document.getElementById('c-3-show');
 
 
-
-
-
-showMenuBar.addEventListener('click', function(){
-    let c3Post = document.getElementById('c-3-post');
-    
-    // Check if display is 'none' or not set
-    if(c3Post.style.display === "none" || c3Post.style.display === ""){
-        c3Post.style.display = "flex";
-
-    }else{
-        c3Post.style.display = "none";
-        
-    }
+document.querySelectorAll('.fa-ellipsis-vertical').forEach(menuBar => {
+    menuBar.addEventListener('click', function(event) {
+        // Find the closest parent box
+        let parentBox = event.target.closest('.right-box-1'); // Adjust class if needed
+        if (parentBox) {
+            let c3Post = parentBox.querySelector('.c-3-postion'); // Get the corresponding menu inside the parent
+            if (c3Post) {
+                // Toggle display
+                c3Post.style.display = (c3Post.style.display === "none" || c3Post.style.display === "") ? "flex" : "none";
+            }
+        }
+    });
 });
 
-// showMenuBar1.addEventListener('click', function() {
-//     let c3Post1 = document.getElementById('c-3-post-1');
-//     let c3Vacancy1 = document.getElementById('c-3-vacancy-1');
-//     // Check if display is 'none' or not set
-//     if (c3Post1.style.display === "none" || c3Post1.style.display === "") {
-//         c3Post1.style.display = "flex";
-//         c3Vacancy1.style.display = "flex";
-//     } else {
-//         c3Post1.style.display = "none";
-//         c3Vacancy1.style.display = "none";
-//     }
-// });
 
-// showMenuBar2.addEventListener('click', function() {
-//     let c3Post2 = document.getElementById('c-3-post-2');
-//     let c3Vacancy2 = document.getElementById('c-3-vacancy-2');
-//     // Check if display is 'none' or not set
-//     if (c3Post2.style.display === "none" || c3Post2.style.display === "") {
-//         c3Post2.style.display = "flex";
-//         c3Vacancy2.style.display = "flex";
-//     } else {
-//         c3Post2.style.display = "none";
-//         c3Vacancy2.style.display = "none";
-//     }
-// });
 
 // const filterDiv = document.getElementById('m-filter-div');
 // const xMark = document.getElementById('x-mark')
