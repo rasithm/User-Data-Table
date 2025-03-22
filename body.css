@@ -231,7 +231,7 @@ body{
     min-height: 800px;
     height: auto;
     width: 100%;
-    left: 1px;
+    left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +244,8 @@ body{
     right: 50px;
     
     height: auto;
-    width: 96%;
+    width: 100%;
+    padding-right: 10px;
     /* background-color: bisque; */
     /*background-color: #fff;*/
     border-radius: 10px;

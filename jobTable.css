@@ -211,12 +211,16 @@
 .table-container {
     width: 100%;
     overflow-x: auto;
-    max-height: 80vh;
+    overflow-y: hidden; /* if want scroll hide */
+    min-height: 90vh; /* if want scrool set max */
+    height: auto; /* if want scroll hide */
+    /* max-height: 98vh; */
     background: #fff;
-    box-shadow: 0 0 10px #ccc;
+    /* box-shadow: 0 0 10px #ccc; */
     border-radius: 8px;
-    padding: 20px;
+    /* padding: 20px; */
     margin-top: 20px;
+    user-select: none;
   }
 
   table {
@@ -305,7 +309,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 350px;
+    max-width: 200px;
     transition: all 0.3s;
   }
 
