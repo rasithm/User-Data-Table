@@ -2,7 +2,7 @@
 .list-right{
     min-height: 800px;
     height: auto;
-    /* background-color: rgb(190, 137, 137); */
+    background-color: rgb(190, 137, 137);
     width: 70%;
     padding-left: 10px;
     /* padding-right: 10px; */
@@ -12,7 +12,7 @@
 .right-div{
     min-height: 800px;
     width: 100%;
-    /* background-color: #dd5a5a; */
+    background-color: #dd5a5a;
 }
 .m-right-top{
     width: 100%;
